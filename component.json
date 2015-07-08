@@ -1,0 +1,24 @@
+{
+  "name": "mixin",
+  "repository": "http://github.com/polyvitamins/charge",
+  "description": "Charge object by class",
+  "version": "0.0.1",
+  "keywords": ["charge","inherit"],
+  "main": [
+    "dist/charge.js"
+  ],
+  "dependencies": {
+    "polyvitamins/extend": "master",
+    "polyvitamins/mixin": "master"
+  },
+  "scripts": [
+    "src/charge.js"
+  ],
+  "license": "MIT",
+  "remotes": [
+    "github"
+  ],
+  "tags": [
+    "amd"
+  ]
+}
