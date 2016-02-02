@@ -25,7 +25,10 @@ var mixin = require('mixin');
 		if ("object"===typeof target.__proto__) {
 			/*
 			Производим слияние прототипа цели с прототипом экспонента
+			Если прототип уже установлен и мы имеем к нему доступ нам необходимо
+			существующий прототип погрузить на уровень вниз
 			*/
+			target.__proto__ = Object.create(target.__proto__);
 			mixin(target.__proto__, overprototype);
 		} else {
 			extend(target, overprototype);
