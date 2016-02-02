@@ -1,6 +1,8 @@
-define(['polyvitamins~extend@master','polyvitamins~mixin@master'], function(extend, mixin) {
-	/* Расширяет объект классом */
-	return function(target, exhibitor) {
+var extend = require('extend');
+var mixin = require('mixin');
+
+/* Расширяет объект классом */
+	module.exports = function(target, exhibitor) {
 
 		/*
 		Создаем единый слой свойств из прототипов класса
@@ -37,5 +39,3 @@ define(['polyvitamins~extend@master','polyvitamins~mixin@master'], function(exte
 		
 		return target;
 	}
-
-});
