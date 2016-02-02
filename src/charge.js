@@ -2,7 +2,7 @@ var extend = require('extend');
 var mixin = require('mixin');
 
 /* Расширяет объект классом */
-	module.exports = function(target, exhibitor) {
+	module.exports = function(target, exhibitor, args) {
 
 		/*
 		Создаем единый слой свойств из прототипов класса
@@ -38,7 +38,7 @@ var mixin = require('mixin');
 		Воспроизводим конструкторы
 		*/
 
-		exhibitor.apply(target);
+		exhibitor.apply(target, args||[]);
 		
 		return target;
 	}
