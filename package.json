@@ -1,0 +1,19 @@
+{
+  "name": "charge",
+  "version": "1.0.0",
+  "description": "Charge an object by class",
+  "main": "src/charge.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polyvitamins/charge.git"
+  },
+  "author": "Vladimir Kalmykov <vladimirmorulus@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/polyvitamins/charge/issues"
+  },
+  "homepage": "https://github.com/polyvitamins/charge#readme"
+}
